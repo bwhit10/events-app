@@ -1,18 +1,3 @@
-db_init_job.yaml
-==================================================
-
-
-
-==================================================
-
-
-
-
-Lab Bonus (if you have time)
-cronjob.yaml
-
-==================================================
-
 apiVersion: batch/v1
 kind: CronJob
 metadata:
@@ -31,6 +16,3 @@ spec:
            - -c
            - date; echo Hello from the Kubernetes cluster
          restartPolicy: OnFailure
-
-==================================================
-
